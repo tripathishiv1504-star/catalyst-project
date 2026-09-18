@@ -1,0 +1,229 @@
+[
+  {
+    "id": "scheme_001",
+    "name": "Post-Matric Scholarship",
+    "category": "education",
+    "benefit": "Financial aid up to ₹1,20,000/year for higher studies",
+    "official_url": "https://scholarships.gov.in",
+    "description": "College aur higher education students ke tuition fees aur living expenses ke liye scholarship sahayata.",
+    "match_criteria": {
+      "occupation": ["student", "chhatra", "vidyarthi", "scholar"],
+      "education": ["college", "graduation", "post-graduation", "degree", "university", "diploma"],
+      "intent": ["scholarship", "padhai ke liye paise", "fees", "fee waiver", "financial aid", "stipend"]
+    },
+    "documents": [
+      "Aadhaar Card",
+      "College Admission / Fee Receipt",
+      "Income Certificate (Family)",
+      "Bank Account Passbook",
+      "Previous Year Marksheet"
+    ],
+    "steps": [
+      "National Scholarship Portal (scholarships.gov.in) par OTR (One Time Registration) karein.",
+      "Aadhaar e-KYC complete karein aur apna college / course select karein.",
+      "Income certificate aur fee receipts upload karke submit karein.",
+      "College verification ke baad scholarship sidhe aapke DBT bank account mein aayegi."
+    ]
+  },
+  {
+    "id": "scheme_002",
+    "name": "PM Kisan Samman Nidhi",
+    "category": "agriculture",
+    "benefit": "₹6,000 per year direct cash transfer in 3 installments",
+    "official_url": "https://pmkisan.gov.in",
+    "description": "Desh ke sabhi kisan parivaron ko aarthik sahayata pradan karne ke liye kendra sarkar ki yojana.",
+    "match_criteria": {
+      "occupation": ["farmer", "kisan", "kisaan", "kheti", "kheti-bari", "krishi", "agriculture"],
+      "education": [],
+      "intent": ["financial help", "paise", "sahayata", "kheti ke liye", "subsidy", "financial aid"]
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Land Ownership Record (Khasra / Khatauni)",
+      "Active Bank Account with Aadhaar Seeded",
+      "Mobile Number linked with Aadhaar"
+    ],
+    "steps": [
+      "PM-Kisan official portal (pmkisan.gov.in) par 'New Farmer Registration' open karein.",
+      "Apna Aadhaar number, state aur mobile number enter karein.",
+      "Apni zameen ki khatauni aur bank details dalkar submit karein.",
+      "Aadhaar OTP se e-KYC complete karein aur har 4 mahine mein ₹2,000 ki kist prapt karein."
+    ]
+  },
+  {
+    "id": "scheme_003",
+    "name": "PM SVANidhi (Street Vendor Loan)",
+    "category": "business",
+    "benefit": "Collateral-free working capital loan up to ₹50,000 with 7% interest subsidy",
+    "official_url": "https://pmsvanidhi.mohua.gov.in",
+    "description": "Street vendors, thela chalane wale aur chhote dukaandaro ke liye aasan working capital loan yojana.",
+    "match_criteria": {
+      "occupation": ["street vendor", "thela", "stall", "rehdi", "chhota business", "hawker", "vendor"],
+      "education": [],
+      "intent": ["loan", "business", "financial support", "working capital", "chhota vyapar"]
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Vending Certificate / Identity Card (Nagar Nigam / ULB)",
+      "Bank Account Passbook",
+      "Passport Size Photo"
+    ],
+    "steps": [
+      "PM SVANidhi portal open karein ya nazdiki Common Service Centre (CSC) jayein.",
+      "Apna Aadhaar linked mobile number verify karein.",
+      "Pehle phase mein ₹10,000 ka initial working capital loan apply karein.",
+      "Samay par repayment karne par agla loan ₹20,000 aur phir ₹50,000 tak milta hai saath hi cashback bhi milta hai."
+    ]
+  },
+  {
+    "id": "scheme_004",
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "category": "business",
+    "benefit": "Collateral-free business loan from ₹50,000 up to ₹10,00,000",
+    "official_url": "https://www.mudra.org.in",
+    "description": "Naye aur existing non-corporate, non-farm small/micro enterprises ko shuru ya badhane ke liye business loan.",
+    "match_criteria": {
+      "occupation": ["business", "vyapar", "dukaan", "shopkeeper", "entrepreneur", "small business", "start business"],
+      "education": [],
+      "intent": ["loan", "business badhane ke liye", "paise", "business loan", "capital"]
+    },
+    "documents": [
+      "Aadhaar Card & PAN Card",
+      "Business Address Proof / Udyam Registration",
+      "Last 6 Months Bank Statement",
+      "Project Report / Machinery Quotation"
+    ],
+    "steps": [
+      "Apne business plan ke hisab se category chunein: Shishu (up to ₹50k), Kishore (₹50k-₹5L), ya Tarun (₹5L-₹10L).",
+      "Udyamimitra portal (udyamimitra.in) par online apply karein ya kisi bhi nationalized bank/NBFC jayein.",
+      "Business proposal aur KYC documents submit karein.",
+      "Bank dwara verification ke baad seedhe loan account mein rashi disburse ki jaati hai."
+    ]
+  },
+  {
+    "id": "scheme_005",
+    "name": "Ayushman Bharat (PM-JAY)",
+    "category": "healthcare",
+    "benefit": "Free cashless treatment up to ₹5,00,000 per year per family",
+    "official_url": "https://beneficiary.nha.gov.in",
+    "description": "Desh ke 50 crore se adhik nagrikon ke liye muft ilaj aur hospital admission ki health insurance yojana.",
+    "match_criteria": {
+      "occupation": ["laborer", "daily wage", "unemployed", "all citizens", "family", "poor"],
+      "education": [],
+      "intent": ["health insurance", "hospital", "ilaj", "bimar", "bimari", "doctor", "medicine", "cashless treatment"]
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card (NFSA) / SECC Family ID",
+      "Active Mobile Number linked with Aadhaar"
+    ],
+    "steps": [
+      "PM-JAY beneficiary portal (beneficiary.nha.gov.in) par eligibility check karein.",
+      "Nazdiki sarkari hospital ya empanelled private hospital ke Ayushman Mitra counter par jayein.",
+      "Aadhaar e-KYC complete karke apna Ayushman Card download karein.",
+      "Kisi bhi list shuda hospital mein ₹5 Lakh tak ka cashless ilaj karwayen."
+    ]
+  },
+  {
+    "id": "scheme_006",
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "category": "housing",
+    "benefit": "Financial assistance & interest subsidy up to ₹2.67 Lakhs for building a house",
+    "official_url": "https://pmaymis.gov.in",
+    "description": "Kachhe makan mein rehne wale sabhi parivaron ko pucca makan banane ke liye aarthik sahayata pradan karna.",
+    "match_criteria": {
+      "occupation": ["laborer", "homemaker", "unemployed", "low income", "worker"],
+      "education": [],
+      "intent": ["housing subsidy", "pucca house", "ghar", "makan", "pucca ghar", "housing", "awas"]
+    },
+    "documents": [
+      "Aadhaar Card (All family members)",
+      "Bank Account Details with IFSC",
+      "Proof of Land / Kutcha House Photo",
+      "Income Certificate"
+    ],
+    "steps": [
+      "PMAY official portal (pmaymis.gov.in) ya Gram Panchayat office mein apply karein.",
+      "Family income aur existing kachhe ghar ki geo-tagged photos submit karein.",
+      "Gram Sabha aur District administration dwara physical inspection complete kiya jayega.",
+      "Approval ke baad foundation, roof aur finishing ke hisab se kiston mein paisa account mein aayega."
+    ]
+  },
+  {
+    "id": "scheme_007",
+    "name": "PM Vishwakarma Yojana",
+    "category": "business",
+    "benefit": "Free toolkit worth ₹15,000 + 5% subsidized collateral-free loan up to ₹3,00,000",
+    "official_url": "https://pmvishwakarma.gov.in",
+    "description": "Traditional karigaron aur shilpkaron (carpenter, blacksmith, goldsmith, potter, tailor) ke samman aur unnati ke liye yojana.",
+    "match_criteria": {
+      "occupation": ["artisan", "karigar", "lohar", "badhai", "carpenter", "blacksmith", "darzi", "tailor", "vishwakarma", "cobbler", "sculptor"],
+      "education": [],
+      "intent": ["toolkit subsidy and loan", "toolkit", "artisan loan", "skill training", "vyapar badhana"]
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card / Family Proof",
+      "Bank Account Passbook",
+      "Proof of Traditional Craft / Trade"
+    ],
+    "steps": [
+      "Nazdiki CSC center par jakar PM Vishwakarma portal par registration karwayen.",
+      "Panchayat / Nagar Palika verification ke baad Vishwakarma Certificate aur ID Card prapt karein.",
+      "5 se 7 din ki basic skill training lein jisme har roz ₹500 stipend milta hai.",
+      "₹15,000 ka toolkit voucher aur 5% sasti byaj dar par pehli kist ₹1,00,000 loan prapt karein."
+    ]
+  },
+  {
+    "id": "scheme_008",
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "category": "social welfare",
+    "benefit": "Highest government interest rate (8.2%) with full tax exemption (EEE)",
+    "official_url": "https://www.indiapost.gov.in",
+    "description": "Beti ki padhai aur shadi ke sunahare bhavishya ke liye surakshit aur aakarshak byaj wali bachat yojana.",
+    "match_criteria": {
+      "occupation": ["parent", "father", "mother", "family", "girl", "daughter", "homemaker", "mahila", "woman"],
+      "education": [],
+      "intent": ["savings for daughter", "daughter savings", "bachat", "savings", "beti ki padhai", "daughter education", "sukanya", "marriage savings"]
+    },
+    "documents": [
+      "Girl Child's Birth Certificate",
+      "Parents / Guardian's Aadhaar & PAN Card",
+      "Address Proof",
+      "Passport Size Photographs"
+    ],
+    "steps": [
+      "Kisi bhi nazdiki Post Office ya authorized commercial bank branch jayein.",
+      "Sukanya Samriddhi account opening form bharein.",
+      "Beti ka birth certificate aur parents ke KYC documents ke saath minimum ₹250 jama karein.",
+      "Saal mein ₹250 se ₹1.5 Lakh tak deposit karein aur beti ke 18/21 saal hone par puri rashi payen."
+    ]
+  },
+  {
+    "id": "scheme_009",
+    "name": "Free Smartphone & Tablet Yojana (DigiShakti Scheme)",
+    "category": "education",
+    "benefit": "Free Tablet / Smartphone for students + Preloaded educational content & digital skills access",
+    "official_url": "https://digishakti.up.gov.in",
+    "description": "Graduation, Post-Graduation, Diploma, ITI, Polytechnic aur higher education ke chhatron ko muft tablet aur smartphone vitran yojana jisse ve digital padhai aur competitive exams ki taiyari kar sakein.",
+    "match_criteria": {
+      "occupation": ["student", "chhatra", "vidyarthi", "youth", "yuva", "college student"],
+      "education": ["college", "graduation", "post-graduation", "diploma", "iti", "polytechnic", "degree", "university", "12th pass", "higher education"],
+      "intent": ["tablet", "free tablet", "free tablet yojna", "free tablet yojana", "smartphone", "free smartphone", "tablet yojana", "tablet yojna", "laptop", "muft tablet", "digishakti", "digital device", "tab", "mobile device", "phone"]
+    },
+    "documents": [
+      "Aadhaar Card",
+      "College / University Student ID Card",
+      "Current Year Admission Slip / Fee Receipt",
+      "Previous Year Marksheets (10th, 12th or Last Semester)",
+      "Domicile / Niwas Praman Patra",
+      "Active Mobile Number linked with Aadhaar"
+    ],
+    "steps": [
+      "Aapke affiliated college ya university dwara eligible chhatron ka data sidhe DigiShakti portal (digishakti.up.gov.in) par upload aur verify kiya jata hai.",
+      "Chhatra DigiShakti portal par 'Know Your Status' option mein jakar apna University/Board aur Enrollment Number enter karke status check kar sakte hain.",
+      "Data verify hone par aapke registered mobile number par SMS aayega jisme vitran ki date aur college/nodal centre ki jankari hogi.",
+      "Nirdharit tithi par apne college campus mein aayojit samaroh mein biometric / ID verification ke baad apna muft tablet/smartphone prapt karein."
+    ]
+  }
+]

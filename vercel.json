@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/index.py": {
+      "excludeFiles": "{node_modules,src,public,dist,.git}/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
