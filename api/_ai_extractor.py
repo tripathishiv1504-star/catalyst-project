@@ -104,67 +104,67 @@ def extract_profile_from_text(text: str) -> dict:
     }
 
     # Education / Student & Free Tablet / Smartphone / Scholarship
-    if any(k in t for k in ["tablet", "tab", "smartphone", "smart phone", "laptop", "digishakti", "muft tablet", "free tablet", "free smartphone"]):
+    if any(k in t for k in ["tablet", "tab", "smartphone", "smart phone", "laptop", "digishakti", "muft tablet", "free tablet", "free smartphone", "टैबलेट", "स्मार्टफोन"]):
         profile["occupation"] = "student"
         profile["education"] = "college"
         profile["intent"] = "free tablet"
         profile["category"] = "education"
-    elif any(k in t for k in ["student", "chhatra", "vidyarthi", "padhai", "study", "studies"]):
+    elif any(k in t for k in ["student", "chhatra", "vidyarthi", "padhai", "study", "studies", "छात्र", "विद्यार्थी", "पढ़ाई"]):
         profile["occupation"] = "student"
         profile["category"] = "education"
 
-    if any(k in t for k in ["college", "degree", "graduation", "university", "btech", "ba", "bsc", "diploma", "iti", "polytechnic"]):
+    if any(k in t for k in ["college", "degree", "graduation", "university", "btech", "ba", "bsc", "diploma", "iti", "polytechnic", "कॉलेज", "विश्वविद्यालय", "डिग्री"]):
         profile["education"] = "college"
-    elif any(k in t for k in ["school", "10th", "12th", "matric"]):
+    elif any(k in t for k in ["school", "10th", "12th", "matric", "स्कूल", "कक्षा"]):
         profile["education"] = "school"
 
-    if not profile["intent"] and any(k in t for k in ["scholarship", "fees", "fee", "wazifa", "padhai ke paise", "stipend"]):
+    if not profile["intent"] and any(k in t for k in ["scholarship", "fees", "fee", "wazifa", "padhai ke paise", "stipend", "स्कॉलरशिप", "छात्रवृत्ति", "फीस"]):
         profile["intent"] = "scholarship"
         profile["category"] = "education"
 
     # Agriculture / Farmers
-    if any(k in t for k in ["farmer", "kisan", "kisaan", "kheti", "kheti-bari", "fasal", "krishi", "agriculture"]):
+    if any(k in t for k in ["farmer", "kisan", "kisaan", "kheti", "kheti-bari", "fasal", "krishi", "agriculture", "किसान", "खेती", "कृषि", "फसल"]):
         profile["occupation"] = "farmer"
         profile["category"] = "agriculture"
-        if any(k in t for k in ["sahayata", "paise", "kist", "subsidy", "financial help", "money"]):
+        if any(k in t for k in ["sahayata", "paise", "kist", "subsidy", "financial help", "money", "सहायता", "पैसे", "सब्सिडी"]):
             profile["intent"] = "financial help"
 
     # Street Vendors & Small Business
-    if any(k in t for k in ["vendor", "thela", "rehdi", "stall", "feri", "street vendor", "hawker"]):
+    if any(k in t for k in ["vendor", "thela", "rehdi", "stall", "feri", "street vendor", "hawker", "ठेला", "रेहड़ी", "दुकानदार"]):
         profile["occupation"] = "street vendor"
         profile["category"] = "business"
         profile["intent"] = "loan"
-    elif any(k in t for k in ["business", "vyapar", "dukaan", "shop", "entrepreneur", "start", "shuru"]):
+    elif any(k in t for k in ["business", "vyapar", "dukaan", "shop", "entrepreneur", "start", "shuru", "व्यापार", "दुकान", "कारोबार"]):
         profile["occupation"] = "business"
         profile["category"] = "business"
         profile["intent"] = "loan"
 
     # Healthcare / Ayushman
-    if any(k in t for k in ["health", "hospital", "ilaj", "bimar", "bimari", "doctor", "medicine", "dawa", "treatment", "ayushman"]):
+    if any(k in t for k in ["health", "hospital", "ilaj", "bimar", "bimari", "doctor", "medicine", "dawa", "treatment", "ayushman", "इलाज", "अस्पताल", "बीमार", "स्वास्थ्य", "आयुष्मान"]):
         profile["intent"] = "health insurance"
         profile["category"] = "healthcare"
 
     # Housing / PM Awas
-    if any(k in t for k in ["ghar", "makan", "house", "pucca ghar", "housing", "awas"]):
+    if any(k in t for k in ["ghar", "makan", "house", "pucca ghar", "housing", "awas", "घर", "मकान", "आवास"]):
         profile["intent"] = "housing subsidy"
         profile["category"] = "housing"
 
     # Traditional Artisans / Vishwakarma
-    if any(k in t for k in ["artisan", "karigar", "lohar", "badhai", "carpenter", "blacksmith", "darzi", "tailor", "vishwakarma", "hath ka kaam"]):
+    if any(k in t for k in ["artisan", "karigar", "lohar", "badhai", "carpenter", "blacksmith", "darzi", "tailor", "vishwakarma", "hath ka kaam", "कारीगर", "दर्जी", "बढ़ई", "लोहार", "विश्वकर्मा"]):
         profile["occupation"] = "artisan"
         profile["intent"] = "toolkit subsidy and loan"
         profile["category"] = "business"
 
     # Women & Daughter Welfare
-    if any(k in t for k in ["beti", "daughter", "girl", "sukanya", "mahila", "aurat", "lady"]):
+    if any(k in t for k in ["beti", "daughter", "girl", "sukanya", "mahila", "aurat", "lady", "बेटी", "लड़की", "महिला", "सुकन्या"]):
         profile["intent"] = "savings for daughter"
         profile["category"] = "social welfare"
 
     # General Financial Assistance / Loan
     if not profile["intent"]:
-        if any(k in t for k in ["loan", "karz", "kredit", "credit"]):
+        if any(k in t for k in ["loan", "karz", "kredit", "credit", "लोन", "कर्ज"]):
             profile["intent"] = "loan"
-        elif any(k in t for k in ["sahayata", "madad", "help", "paise", "subsidy"]):
+        elif any(k in t for k in ["sahayata", "madad", "help", "paise", "subsidy", "मदद", "पैसा"]):
             profile["intent"] = "financial help"
 
     return profile

@@ -83,25 +83,25 @@ def get_schemes_from_profile(profile: dict, raw_text: str = ""):
     if raw:
         for sid, s in schemes_dict.items():
             s_name = s.get('name', '').lower()
-            if ('tablet' in raw or 'digishakti' in raw) and ('tablet' in s_name or 'digishakti' in s_name):
+            if ('tablet' in raw or 'digishakti' in raw or 'टैबलेट' in raw) and ('tablet' in s_name or 'digishakti' in s_name):
                 s['match_score'] += 10
                 if "Direct tablet requirement match: Muft Tablet / Smartphone" not in s['matchedCriteria']:
                     s['matchedCriteria'].insert(0, "Direct requirement match: Muft Tablet / Smartphone")
-            elif 'scholarship' in raw and 'scholarship' in s_name and 'tablet' not in raw:
+            elif ('scholarship' in raw or 'छात्रवृत्ति' in raw or 'स्कॉलरशिप' in raw) and 'scholarship' in s_name and 'tablet' not in raw:
                 s['match_score'] += 6
-            elif ('kisan' in raw or 'kisan samman' in raw) and 'kisan' in s_name:
+            elif ('kisan' in raw or 'kisan samman' in raw or 'किसान' in raw) and 'kisan' in s_name:
                 s['match_score'] += 10
-            elif ('mudra' in raw or 'vyapar' in raw) and 'mudra' in s_name:
+            elif ('mudra' in raw or 'vyapar' in raw or 'व्यापार' in raw) and 'mudra' in s_name:
                 s['match_score'] += 6
-            elif ('svanidhi' in raw or 'vendor' in raw or 'thela' in raw) and 'svanidhi' in s_name:
+            elif ('svanidhi' in raw or 'vendor' in raw or 'thela' in raw or 'ठेला' in raw) and 'svanidhi' in s_name:
                 s['match_score'] += 10
-            elif ('ayushman' in raw or 'ilaj' in raw) and 'ayushman' in s_name:
+            elif ('ayushman' in raw or 'ilaj' in raw or 'इलाज' in raw) and 'ayushman' in s_name:
                 s['match_score'] += 10
-            elif ('awas' in raw or 'makan' in raw) and 'awas' in s_name:
+            elif ('awas' in raw or 'makan' in raw or 'घर' in raw or 'आवास' in raw) and 'awas' in s_name:
                 s['match_score'] += 10
-            elif ('vishwakarma' in raw or 'karigar' in raw or 'toolkit' in raw) and 'vishwakarma' in s_name:
+            elif ('vishwakarma' in raw or 'karigar' in raw or 'toolkit' in raw or 'कारीगर' in raw) and 'vishwakarma' in s_name:
                 s['match_score'] += 10
-            elif ('sukanya' in raw or 'beti' in raw) and 'sukanya' in s_name:
+            elif ('sukanya' in raw or 'beti' in raw or 'बेटी' in raw) and 'sukanya' in s_name:
                 s['match_score'] += 10
 
     # Category matching bonus
