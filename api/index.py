@@ -141,8 +141,13 @@ def get_schemes_from_profile(profile: dict, raw_text: str = ""):
     return matched_schemes
 
 def startup_event():
-    import seed
-    seed.seed_data()
+    import os
+    if os.environ.get("VERCEL") != "1":
+        try:
+            import _seed
+            _seed.seed_data()
+        except ImportError:
+            pass
 
 def analyze_text(req: AnalyzeRequest):
     if not req.text.strip():

@@ -1,14 +1,18 @@
 import sqlite3
 import json
 import os
+import shutil
 
-DB_PATH = os.path.join(os.path.dirname(__file__), 'schemes.db')
+BUNDLED_DB_PATH = os.path.join(os.path.dirname(__file__), 'schemes.db')
 
 def get_db():
     if os.environ.get("VERCEL") == "1":
-        conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
+        TMP_DB_PATH = '/tmp/schemes.db'
+        if not os.path.exists(TMP_DB_PATH):
+            shutil.copy2(BUNDLED_DB_PATH, TMP_DB_PATH)
+        conn = sqlite3.connect(TMP_DB_PATH)
     else:
-        conn = sqlite3.connect(DB_PATH)
+        conn = sqlite3.connect(BUNDLED_DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 
