@@ -5,12 +5,14 @@ import shutil
 
 BUNDLED_DB_PATH = os.path.join(os.path.dirname(__file__), 'schemes.db')
 
+if os.environ.get("VERCEL") == "1":
+    TMP_DB_PATH = '/tmp/schemes.db'
+    # Always copy on cold start to ensure we don't use a corrupted/empty leftover file
+    shutil.copy2(BUNDLED_DB_PATH, TMP_DB_PATH)
+
 def get_db():
     if os.environ.get("VERCEL") == "1":
-        TMP_DB_PATH = '/tmp/schemes.db'
-        if not os.path.exists(TMP_DB_PATH):
-            shutil.copy2(BUNDLED_DB_PATH, TMP_DB_PATH)
-        conn = sqlite3.connect(TMP_DB_PATH)
+        conn = sqlite3.connect('/tmp/schemes.db')
     else:
         conn = sqlite3.connect(BUNDLED_DB_PATH)
     conn.row_factory = sqlite3.Row
